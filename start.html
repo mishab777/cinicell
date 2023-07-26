@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cinicell</title>
+    <link rel="stylesheet" href="start.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="page-1">
+      <div class="nav-1">
+        <div class="cell">
+          <img class="cell1" src="WARDROBE.jpg" alt="" />
+        </div>
+        <button class="nav-btn open-btn">
+          <input
+            type="search"
+            placeholder="search your movies"
+            class="search-bar"
+          />
+        </button>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle length"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Language
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">English(US)</a></li>
+            <li><a class="dropdown-item" href="#">Spanish(ESP)</a></li>
+            <li><a class="dropdown-item" href="#">French(FRA)</a></li>
+          </ul>
+        </div>
+        <button class="sign" onclick="signin()">Sign In</button>
+      </div>
+      <div
+        id="carouselExampleDark"
+        class="carousel caro carousel-dark slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="https://images4.alphacoders.com/115/thumb-1920-1151718.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="https://images2.alphacoders.com/132/1320904.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src=" https://images7.alphacoders.com/131/1314905.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://thumb.canalplus.pro/http/unsafe/1200x630/smart/creativemedia-image.canalplus.pro/content/0001/52/6ea2ce5f7a548a2b318569d7412b8595a704a805.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="sign-div" style="display: none" onmouseleave="signup()">
+        <div class="new">
+          <input
+            class="sign-items"
+            type="email"
+            placeholder="Email or phone number"
+          />
+          <input
+            class="sign-items"
+            type="password"
+            name=""
+            id=""
+            placeholder="Password"
+          />
+          <input type="button" class="sign-items1" value="Sign In" />
+          <span>New to cinicell?<a href="">Sign up</a></span>
+        </div>
+      </div>
+
+      <div class="nav nav-white">
+        <img
+          class="marvel"
+          src="https://thathashtagshow.com/wp-content/uploads/2021/04/175544731_477717750330755_8610264281676284752_n-1200x640.png"
+          alt=""
+        />
+        <img
+          class="marvel"
+          src="https://www.digitaltveurope.com/files/2019/11/Disney.jpg"
+          alt=""
+        />
+        <img
+          class="marvel close-btn"
+          src="https://www.pinkvilla.com/english/images/2023/01/1683173001_netflix-series_1280*720.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="well">
+      <span class="on">Movies On Trending</span>
+    </div>
+    <div class="content">
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbfF1Z1F9e62TDwaRJ2AuHLdSudEz2mKDa4SGlBPLddwBOp9oT"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXP2xzybXCOuS8ceNCDSLjDIiqROmdayfUyZh9GVVjPrOuLYUP"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_PUJcxJaMfS1HsPxYNi_ja0gM6zH4JjHid9VLAulYx-7q0kSS"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5Kmw2OPRVGAeDrtul_Q4V_nz_9SDY2VQj8Ol41c_J-YZzMRtF"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6fizNzdu8Tjdouj3avaO4QmsHRHpQNHC4mG7NewjcVlVdJWpA"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTncqDPr-ITY-4o6VbsYSP4JKYq9yfC_dYx9EaeXl5uW1RpXcI4"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMHXbtFD-9mWaKU9UP9h_VcFH9Pqq9JxwkX9fxY5uzfeHRggss"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ17XGATi5V_xrlBKORLKAc6kVh-Kejj6CwnbknLkVxO3N_Gb3m"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR87MgjSUTPyW43l-JmBleLsvRox7HY2dLxQbYA2kuo2Wr_B__t"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSItB94Jt7NwINJmxyjnRMFzqvhP7xGCxhCitNTTs8b9mr3kOQi"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvk0rj9ibqlLtL4Ufw4cz3rLatm9j9SqfNB_lna0DMSNH75g_P"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwh2XCwZ9BFNDA8mQRsku1nPNLHqchzvqlhu0rRnUqSAPK3Piy"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaP-CWoXwfalfCKIwyFDbRee-su_KShDQVhh3O9Xbj4vBRT1x-"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHqfxN1PrvfEESqdok8FAnSaeo89jCr9ecOTCwoHv2H7zipcED"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlRAzByEV1J7ErrtiCb8f_-JhLtrhyd2bnISwpZu45oX4iTaiI"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body watch">
+            <a href="#0" class="btn btn-primary">watch now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="well">
+      <span class="on">Series on trending</span>
+    </div>
+    <div class="shows">
+      <div class="tv">
+        <div class="series">
+          <a href="#0" class="names" onmouseover="peaky()">Peaky blinders</a>
+          <a href="#0" class="names" onmouseover="sherlock()">Sherlock</a>
+          <a href="#0" class="names" onmouseover="strange()">Stranger things</a>
+          <a href="#0" class="names" onmouseover="blackm()">Black mirror</a>
+          <a href="#0" class="names" onmouseover="crown()">The crown</a>
+          <a href="#0" class="names" onmouseover="warrior()">Warrior</a>
+          <a href="#0" class="names">The last of us</a>
+          <a href="#0" class="names" onmouseover="love()">Hidden love</a>
+          <a href="#0" class="names" onmouseover="boys()">The boys</a>
+          <a href="#0" class="names" onmouseover="breakb()">Breaking bad</a>
+          <a href="#0" class="names" onmouseover="fake()">Fake Profile</a>
+          <a href="#0" class="names" onmouseover="black()">Black Night</a>
+          <a href="#0" class="names" onmouseover="obsession()">Obsession</a>
+          <a href="#0" class="names" onmouseover="sky()">Sky High</a>
+          <a href="#0" class="names" onmouseover="nurse()">The Nurse</a>
+          <a href="#0" class="names">Squid game</a>
+          <a href="#0" class="names" onmouseover="from()">From</a>
+          <a href="#0" class="names1" onclick="more()">More...</a>
+        </div>
+        <div class="cmp">
+          <img
+            class="a1"
+            src="https://cdn.freebiesupply.com/logos/large/2x/warner-bros-logo-png-transparent.png"
+            alt=""
+          />
+          <img
+            class="a1"
+            src="https://logos-download.com/wp-content/uploads/2018/07/Universal_logo_black.png"
+            alt=""
+          />
+          <img
+            class="a1"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/5/57/Walt_Disney_Pictures_2011_logo.svg/1200px-Walt_Disney_Pictures_2011_logo.svg.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="series-img">
+        <img
+          id="change"
+          class="img2"
+          src="https://m.media-amazon.com/images/M/MV5BZjYzZDgzMmYtYjY5Zi00YTk1LThhMDYtNjFlNzM4MTZhYzgyXkEyXkFqcGdeQXVyMTE5NDQ1MzQ3._V1_.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="well">
+      <span class="on">Top rated movies</span>
+    </div>
+    <div class="rating">
+      <div class="card">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOVawK0veHMFUbJ1w7fTyWAzHX5aNQUz1zl-p65b4bYscW5JrK"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="movie">Bird Box Barcelona</span>
+          <img class="b1" src="star.png" alt="" />
+        </div>
+      </div>
+      <div class="card card1">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8yyjeGjzEMuLv0cbNN9ZkPjkgG8VhdRABHA1phSnMaw20KUAD"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="movie">Unknown cave Bones</span>
+          <img class="b1" src="star.png" alt="" />
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj_2fiPYlMF0gzAwAxDznX-VPGQh4K72IByO__ylYc1oW2EWWA"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="movie">The Tutor 2023</span>
+          <img class="b1" src="star.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="start.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
