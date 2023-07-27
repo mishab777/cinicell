@@ -37,6 +37,12 @@ function checkBoxes() {
 function sherlock() {
   document.getElementById("change").src = "images.jpeg";
 }
+function last() {
+  document.getElementById("change").src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFrnKGXGTmcusfWp8W42ZosoTU0155pl2CKsMw3ZiYEY74uKNt";
+}
+function squid() {
+  document.getElementById("change").src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-IzQZViMaCt9Ufe97-6mRCmPs3T6GYEcFFNIytkzTWUpHCbht";
+}
 function boys() {
   document.getElementById("change").src =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHVABchoPCIw6ZtMRgd2x7yqT-B81Nm5GO6iIn515DZX_wZ6eb";
